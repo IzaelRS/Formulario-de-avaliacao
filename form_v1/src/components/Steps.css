@@ -1,0 +1,48 @@
+.steps {
+     display: flex;
+     gap: 4rem;
+     justify-content: center;
+     align-items: center;
+     max-width: 400px;
+     margin: 0 auto;
+     position: relative;
+     margin-bottom: 2rem;
+}
+
+/* linha de separacao*/
+.steps::after {
+     content: "";
+     width: 380px;
+     border-bottom: 1px solid #4cb5ab;
+     position: absolute;
+     top: 25px;
+     left: 10px;
+
+}
+
+/* nomes */
+.step {
+     position: relative;
+     text-align: center;
+     background-color: #fcfefe;
+     z-index: 1;
+     width: 100px;
+     padding: 0.6rem;
+
+}
+
+/* incos */
+.step svg {
+     font-size: 25px;
+
+}
+
+/* quando estiver ativado */
+.active {
+     font-weight: bold;
+}
+
+.active>svg {
+     /* dar cor no svg*/
+     fill: #005e6a;
+}

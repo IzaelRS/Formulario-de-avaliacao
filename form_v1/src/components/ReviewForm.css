@@ -1,0 +1,40 @@
+.form-control.score-container {
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     justify-content: center;
+}
+
+.score-container svg {
+     font-size: 1.5rem;
+     cursor: pointer;
+     fill: #66c0b7;
+     transition: 0.3s;
+}
+
+.score-container svg:hover {
+     fill: #005a51;
+}
+
+/* deixar o radio selecionado*/
+.score-container input:checked~svg {
+     fill: #002d28;
+}
+
+.radio-container {
+     text-align: center;
+     position: relative;
+}
+
+/* metodo para esconder os inputs e continuar com as validacoes no html*/
+.radio-container input {
+     opacity: 0;
+     position: absolute;
+}
+
+.radio-container p {
+     font-style: italic;
+     font-weight: 500;
+     font-size: 0.9rem;
+     margin-top: 1rem;
+}
